@@ -17,13 +17,13 @@ export default function Home() {
     });
     const data = await response.json();
     setResult(data.result);
-    setinput_prompt("");
+    // setinput_prompt("");
   }
 
   return (
     <div>
       <Head>
-        <title>OpenAI Quickstart</title>
+        <title>Bedtime Stories</title>
         <link rel="icon" href="/dog.png" />
       </Head>
 
@@ -34,11 +34,11 @@ export default function Home() {
           <input
             type="text"
             name="input_prompt"
-            placeholder="Enter a word"
+            placeholder="Enter text"
             value={input_prompt}
             onChange={(e) => setinput_prompt(e.target.value)}
           />
-          <input type="submit" value="Generate story" />
+          <input type="submit" value="Continue story" />
         </form>
         <div className={styles.result}>{result}</div>
       </main>

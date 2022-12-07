@@ -27,7 +27,7 @@ function generatePrompt(input_prompt) {
   const capitalizedinput_prompt =
     input_prompt[0].toUpperCase() + input_prompt.slice(1).toLowerCase();
   //console.log(capitalizedinput_prompt);
-  return `continue a short bedtime story. The story begins anxiously, but in the end it spreads a positive attitude. The story starts as follows: ${capitalizedinput_prompt}. At the end of the input there is a question and an answer. First, rephrase these two sentences in a narrative way. Then, continue the story in two sentences. Then ask a question about a possible continuation of the story.`;
+  return `Continue a short bedtime story. The story begins anxiously, but in the end it spreads a positive attitude. The story starts as follows: ${capitalizedinput_prompt}. At the end of the input there is a question and an answer. First, rephrase these two sentences in a narrative way. Then, continue the story in two sentences. Then ask a question about a possible continuation of the story.`;
 
 //input_prompt: Cat
 //Names: Captain Sharpclaw, Agent Fluffball, The Incredible Feline
